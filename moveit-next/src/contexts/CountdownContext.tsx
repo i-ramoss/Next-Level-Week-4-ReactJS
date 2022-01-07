@@ -38,6 +38,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
     clearTimeout(countdownTimeout);
 
     setIsActive(false);
+    setHasFinished(false);
     setTime(0.1 * 60);
   }
 
